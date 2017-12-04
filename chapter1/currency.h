@@ -139,3 +139,4 @@ currency currency::percent(double x)	//注意是返回对象而非返回引用,这里是局部对象
 
 #endif
 
+
