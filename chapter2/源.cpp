@@ -83,6 +83,50 @@ void selectSort(T a[],int n)
 	return;
 }
 
+//矩阵乘法
+template<class T>
+void matrixMutiply(T **a, T **b, T **c, int m, int n, int p)
+{
+	for (int i = 0; i < n; i++)		//固定行
+	{
+		for (int j = 0; j < p; j++) //固定列
+		{
+			T sum = 0;
+			for (int k = 0; k < n; k++)
+			{
+				sum += a[i][k] * b[k][j];
+			}
+			c[i][j] = sum;
+		}
+	}
+	return;
+}
+
+//2-27
+//void d(int x[], int n)
+//{
+//	int step = 0;
+//	for (int i = 0; i < n; i += 2)
+//	{
+//		step++;
+//		x[i] += 2;
+//		step++;
+//	}
+//	step++;
+//	int i = 1;
+//	step++;
+//	while (i <= n / 2)
+//	{
+//		step++;
+//		x[i] += x[i + 1];
+//		step++;
+//		i++;
+//		step++;
+//	}
+//	step++;
+//	cout << step;
+//	return;
+//}
 int main()
 {
 	//2-9
@@ -123,6 +167,9 @@ int main()
 		cout << a[i] << '\t';
 	}*/
 
-
+	//2-27
+	/*int a[] = { 1,2,3,4,5,6,7 };
+	d(a, 7);*/
+	
 	return 0;
 }
