@@ -1,5 +1,33 @@
 #include "exercise.h"
+#include "arrayList.h"
 
+//5-5
+//template <class T>
+//class arrayWithTrimToSize :public arrayList<T>
+//{
+//	public:
+//		arrayWithTrimToSize(int initialCapacity = 10) :arrayList<T>(initialCapacity) {};
+//		void trimToSize();
+//};
+//
+//template <class T>
+//void arrayWithTrimToSize<T>::trimToSize()
+//{
+//	if (arrayLength == listSize)
+//	{
+//		return;
+//	}
+//	if (listSize == 0)
+//	{
+//		delete[] element;
+//		element = new T[1];
+//		arrayLength = 1;
+//		return;
+//	}
+//	changeLength1D(element, arrayLength, listSize);
+//	arrayLength = listSize;
+//	return;
+//}
 int main()
 {
 	//5-2
@@ -26,5 +54,13 @@ int main()
 		}
 		cout << endl;
 	}*/
+
+	//5-5
+	//arrayWithTrimToSize<int> a(10);
+	//cout << "before:" << a.capacity()<<endl;
+	//a.trimToSize();
+	//cout << "after:" << a.capacity() << endl;
+
+
 	return 0;
 }
