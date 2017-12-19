@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F5843C87-D972-4B6B-B23B-2306638CFDD8}</ProjectGuid>
+    <ProjectGuid>{E1A2436E-EEA2-4298-9A1D-ED40F9864052}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>chapter5</RootNamespace>
+    <RootNamespace>chapter6</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -87,7 +87,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -101,7 +101,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -147,13 +147,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="arrayList.h" />
-    <ClInclude Include="changeLength1D.h" />
-    <ClInclude Include="exercise.h" />
-    <ClInclude Include="myExceptions.h" />
-    <ClInclude Include="vectorList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

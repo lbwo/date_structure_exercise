@@ -19,21 +19,4 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="exercise.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="arrayList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="myExceptions.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="changeLength1D.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="vectorList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>
